@@ -1,0 +1,118 @@
+<?php
+require('db.php');
+include("auth.php");
+?>
+<?php
+$count=1;
+$sel_query="Select title from blog where categorey=sports;";
+$result = mysqli_query($con,$sel_query);?>
+<!DOCTYPE html>
+<html>
+<title>Sports</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Raleway", sans-serif}
+a{text-decoration:none;}
+</style>
+<body class="w3-light-grey">
+<div class="w3-content" style="max-width:1400px">
+<div class="w3-row">
+<div class="w3-col l8 s12">
+  <!-- Blog entry -->
+  <div class="w3-card-4 w3-margin w3-white">
+    <img src="images/sp1.jpg" alt="Virat Kholi" style="width:100%">
+    <div class="w3-container">
+      <h3><b><?php echo $result;?></b></h3>
+      <h5> <span class="w3-opacity">July 2, 2021</span></h5>
+    </div>
+
+    <div class="w3-container">
+      <p>He can rightfully stake claim to being the greatest batsman of modern-day cricket. Virat Kohli is a batting colossus, and in his international career that has lasted over a decade, the Indian skipper has made the life of bowlers across the world miserable.
+The batting legend has scored 22286 runs in international cricket thus far and is only the third Indian batsman after Sachin Tendulkar and Rahul Dravid to score over 20000 runs in the international arena. Kohli also stands third in the list of batsmen with the most centuries in international cricket, with 70 tons to his name. If he scores two more hundreds, he will go past Ricky Ponting’s tally of 71 centuries and occupy second place.
+While Ponting took 668 international innings to score 71 centuries, Kohli has scored 70 hundreds in just 468 innings. The legendary Sachin Tendulkar occupies the top spot, with a mammoth 100 international hundreds to his name. While Virat Kohli has scored 43 hundreds in the ODI format, he has scored 27 centuries in Test cricket.
+The 32-year-old has played some stunning knocks in the ODI format. His blazing 133* off just 86 balls at Hobart against Sri Lanka in 2012 helped India to chase down a challenging target of 321 in just 36.4 overs. Another gem from the willow of the master in ODI cricket is the 183 that he scored against rivals Pakistan in the Asia Cup in the year 2012.
+Coming in with the scoreboard reading 0/1, Virat Kohli launched a murderous assault on the opposition, scoring a breathtaking 148-ball 183, and helped India to chase a mammoth target of 330 with 13 balls to spare.
+<br><h3>Virat Kohli has played several match-winning knocks in Tests</h3>
+In the Test arena too, Virat Kohli has set the stage on fire. The batting behemoth has scored 7 double centuries, the most by an Indian willow wielder in Tests. Out of the many ravishing knocks from Kohli in the whites, some of them stand out for the class and authority that he exhibited out in the middle.
+The 254* that he plundered against South Africa in the year 2019 is one that will rank as one of the most eye-catching knocks played by an Indian batsman in Test matches at home. The Delhi born batting colossus faced 336 deliveries, and scored an unbeaten 254 to allow India to pile up a total of 601 runs on the board, and helped his side to trounce the Proteas by an innings and 137 runs.
+Also, another Virat Kohli special that will stay in our memories is the 235 that he scored at the Wankhede stadium in Mumbai against England in 2016. Coming in with the scorecard reading 146/2, Kohli took on the England bowling attack consisting of James Anderson, Ben Stokes and Adil Rashid to score a magical double ton. His exploits with the willow allowed India to thrash the England side by an innings and 36 runs.
+Now, with England once again visiting Indian shores, the Indian captain will be raring to go and pile up some massive scores. In the table below, let us take a look at all of Kohli’s centuries in Test and ODI cricket.
+</p>
+      <div class="w3-row">
+       
+      </div>
+    </div>
+  </div>
+  <hr>
+</div>
+<div class="w3-col l4">
+  <!-- About Card -->
+  <div class="w3-card w3-margin w3-margin-top">
+  <img src="images/sp2.jpeg" style="width:100%">
+    <div class="w3-container w3-white">
+    
+      <p>Sports blogs are another interesting type of blogs online. Every country in the world has different sports and every sport has its own stars.
+	  Sports blogging may also include bloggers who are writing paid content for teams, athletes, and other organizations.</div>
+  </div><hr>
+  
+  <!-- Posts -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Popular Posts</h4>
+    </div>
+    <ul class="w3-ul w3-hoverable w3-white">
+      <li class="w3-padding-16">
+        <img src="/w3images/workshop.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Lorem</span><br>
+        <span>Sed mattis nunc</span>
+      </li>
+      <li class="w3-padding-16">
+        <img src="/w3images/gondol.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Ipsum</span><br>
+        <span>Praes tinci sed</span>
+      </li> 
+      <li class="w3-padding-16">
+        <img src="/w3images/skies.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Dorum</span><br>
+        <span>Ultricies congue</span>
+      </li>   
+      <li class="w3-padding-16 w3-hide-medium w3-hide-small">
+        <img src="/w3images/rock.jpg" alt="Image" class="w3-left w3-margin-right" style="width:50px">
+        <span class="w3-large">Mingsum</span><br>
+        <span>Lorem ipsum dipsum</span>
+      </li>  
+    </ul>
+  </div>
+  <hr> 
+ 
+  <!--  tags -->
+  <div class="w3-card w3-margin">
+    <div class="w3-container w3-padding">
+      <h4>Tags</h4>
+    </div>
+    <div class="w3-container w3-white">
+    <p><span class="w3-tag w3-black w3-margin-bottom">Sports</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Technology</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">London</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Travel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Fitness</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">DIY</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Food</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Lifestyle</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Family</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Gaming</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Clothing</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Shopping</span>
+      <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Marvel</span> <span class="w3-tag w3-light-grey w3-small w3-margin-bottom">Games</span>
+    </p>
+    </div>
+  </div>
+</div>
+</div><br>
+</div>
+
+<!-- Footer -->
+<footer class="w3-center w3-black w3-padding-16">
+  <button class="w3-button w3-black  w3-padding-large w3-margin-bottom"><a href="index.php">Home</a></button>
+  <button class="w3-button w3-black w3-padding-large w3-margin-bottom">Next »</button>
+   
+  <p>Reach us @: bloggersdomian.gmail.com</p>
+  <p>Copyright:NS web-devlopers</p>
+</footer>
+
+</body>
+</html>
